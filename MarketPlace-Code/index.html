@@ -1,0 +1,168 @@
+<html>
+
+<header>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.8.2/web3.min.js" integrity="sha512-Ls8WO4Esu7Jb9a92BfIp1Ftgl9t5Ncaa/6zKzpOkTGXW+dPcJcI4Yz2HR7cXY0YcfIAsL7R9Gqfbw8ERX8iYaA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+</header>
+
+<body>
+    <script>
+        async function connect() {
+            if (typeof window.ethereum == 'undefined') {
+                alert('MetaMask is not installed!');
+            }
+            window.web3 = new Web3(ethereum);
+            const accounts = await window.web3.eth.getAccounts()
+            console.log("here")
+            console.log(accounts[0]);
+            console.log("where is request")
+            const account = accounts[0];
+            document.getElementById("theta").style.display = "block"
+            document.getElementById("nottheta").style.display = "none"
+            document.getElementById("thetaadd").innerHTML = accounts[0]
+        }
+    </script>
+
+    <div class="nav-container" id="nottheta" style="display: block;">
+        <div class="nav-buttons">
+            <div style="height: 50%;width: 100%;">
+                <h1 style="text-align: center; font-size: 40px;">Market Place</h1>
+            </div>
+            <div class="nav-button"><button class="nv-btn btn-3 custom-btn" onclick="connect()" type="button">Connect</button></div>
+        </div>
+
+
+    </div>
+    <div class="nav-container" id="theta" style="display: none;">
+        <div class="nav-buttons">
+            <div style="height: 50%;width: 100%;">
+                <h1 style="text-align: center; padding-left: 30%;">Market Place</h1>
+            </div>
+            <h4 style="text-align:right" id="thetaadd">0xE8060BB1365453ae63FDDe9D45031A8B8800f731 <br> 100 Aureus</h4>
+        </div>
+
+
+    </div>
+    <div style="display: flex; justify-content: center; margin: 20px;">
+        <a href="/canon/index.html">
+            <div class="cardBox">
+                <div class="card">
+                    <img src="cannon.jpeg" style="height: 100%;width: 100%;" alt="Flowers in Chania">
+
+                    <div class="content">
+                        <h3>Canon</h3>
+                        <p>Deadly Weapon, high damage rate</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/xbow/index.html">
+            <div class="cardBox">
+                <div class="card">
+                    <img src="xbox.jpeg" style="height: 100%;width: 100%;" alt="Flowers in Chania">
+
+                    <div class="content">
+                        <h3>Xbow</h3>
+                        <p>Very Quick , Throws bow very fast</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/tesla/index.html">
+            <div class="cardBox">
+                <div class="card">
+                    <img src="tesla.jpeg" style="height: 100%;width: 100%;" alt="Flowers in Chania">
+
+                    <div class="content">
+                        <h3>Tesla</h3>
+                        <p>Electric Shock , Shocks the enemy and gives dmaa</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    </div>
+
+    </div>
+    <div style="display: flex; justify-content: center; margin: 20px;">
+        <a href="/archer/index.html">
+            <div class="cardBox">
+                <div class="card">
+                    <img src="arch.png" style="height: 100%;width: 100%;" alt="Flowers in Chania">
+
+                    <div class="content">
+                        <h3>Archer</h3>
+                        <p>Targets from a distance, high accuracy and super cool attitude</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/valkyrie/index.html">
+            <div class="cardBox">
+                <div class="card">
+                    <img src="valkk.png" style="height: 100%;width: 100%;" alt="Flowers in Chania">
+
+                    <div class="content">
+                        <h3>Valkyrie</h3>
+                        <p>Destroys enemy like a boss, be careful of her guns</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/robo/index.html">
+            <div class="cardBox">
+                <div class="card">
+                    <img src="robt.png" style="height: 100%;width: 100%;" alt="Flowers in Chania">
+
+                    <div class="content">
+                        <h3>Robo Drill</h3>
+                        <p>It's a robot with drill, drills hole in the building</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    </div>
+
+    </div>
+    <div style="display: flex; justify-content: center; margin: 20px;">
+        <a href="/miner/index.html">
+            <div class="cardBox">
+                <div class="card">
+                    <img src="miner.jpeg" style="height: 100%;width: 100%;" alt="Flowers in Chania">
+
+                    <div class="content">
+                        <h3>Miner</h3>
+                        <p>Mines aureus at a good speed</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/townhall/index.html">
+            <div class="cardBox">
+                <div class="card">
+                    <img src="townhall.jpeg" style="height: 100%;width: 100%;" alt="Flowers in Chania">
+
+                    <div class="content">
+                        <h3>Townhall</h3>
+                        <p>Very Quick , Throws bow very fast</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+
+    </div>
+
+    </div>
+    </div>
+
+
+</body>
+
+</html>

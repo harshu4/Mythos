@@ -1,0 +1,29 @@
+<canvas class="webgl"></canvas>
+
+
+<div
+class="boxed"
+style="
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  margin: 50px;
+  right: 0;
+  bottom: 0;
+  display:flex;
+ 
+  opacity: 1;
+"
+>  <div class="card">
+        <div class="bg"></div>
+        <div class="content" style="display:flex;flex-direction:column;align-items:center">
+          <h1 class="heading">?name</h1>
+          <p class="info">
+            ?price Aureus
+            
+          </p>
+           <button class="custom-btn btn-2" onclick="buy(?id, ?price )">Buy Now</button>
+        </div>
+      </div>
+</div>
+
